@@ -1,3 +1,12 @@
+# IDEs
+.vscode
+
+# Uploads
+uploads/categories/**
+uploads/products/**
+!uploads/categories/placeholder.jpeg
+!uploads/products/placeholder.jpeg
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

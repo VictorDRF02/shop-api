@@ -1,0 +1,329 @@
+[
+  {
+    "model": "shop.user",
+    "pk": 2,
+    "fields": {
+      "username": "Admin",
+      "password": "pbkdf2_sha256$720000$UMO4n320ARWaCt0JG8Lk6N$j/fS8hTImF/auHENmDnb/eLKfVSD3EGcmfC30Npg1wY=",
+      "is_admin": "True"
+    }
+  },
+  {
+    "model": "shop.user",
+    "pk": 3,
+    "fields": {
+      "username": "User",
+      "password": "pbkdf2_sha256$720000$UMO4n320ARWaCt0JG8Lk6N$j/fS8hTImF/auHENmDnb/eLKfVSD3EGcmfC30Npg1wY=",
+      "is_admin": "False"
+    }
+  },
+  {
+    "model": "shop.category",
+    "pk": 1,
+    "fields": {
+      "name": "Todos los productos",
+      "description": "Esta categoría incluye todos los productos disponibles en nuestra tienda. Desde electrónica hasta alimentos, encontrarás una amplia variedad de artículos.",
+      "image": "uploads/categories/placeholder.jpeg"
+    }
+  },
+  {
+    "model": "shop.category",
+    "pk": 2,
+    "fields": {
+      "name": "Electrónica",
+      "description": "Descubre nuestra selección de dispositivos, gadgets y accesorios electrónicos. Ofrecemos productos de alta calidad que satisfacen todas tus necesidades tecnológicas.",
+      "image": "uploads/categories/placeholder.jpeg"
+    }
+  },
+  {
+    "model": "shop.category",
+    "pk": 3,
+    "fields": {
+      "name": "Libros",
+      "description": "Explora nuestra colección de libros de bolsillo, tapa dura y audiolibros. Tenemos una amplia gama de géneros para satisfacer a todos los amantes de la lectura.",
+      "image": "uploads/categories/placeholder.jpeg"
+    }
+  },
+  {
+    "model": "shop.category",
+    "pk": 4,
+    "fields": {
+      "name": "Ropa",
+      "description": "Nuestra moda para hombres y mujeres incluye las últimas tendencias y estilos clásicos. Encuentra el outfit perfecto para cualquier ocasión en nuestra tienda.",
+      "image": "uploads/categories/placeholder.jpeg"
+    }
+  },
+  {
+    "model": "shop.category",
+    "pk": 5,
+    "fields": {
+      "name": "Alimentos",
+      "description": "Ofrecemos una variedad de alimentos y productos esenciales para el hogar. Desde productos frescos hasta alimentos enlatados, tenemos todo lo que necesitas para tu despensa.",
+      "image": "uploads/categories/placeholder.jpeg"
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 1,
+    "fields": {
+      "name": "Laptop",
+      "description": "Nuestra laptop de alto rendimiento es perfecta para todas tus necesidades informáticas. Con un procesador rápido y una gran capacidad de almacenamiento, esta laptop te permitirá trabajar y jugar sin problemas.",
+      "price": "999.99",
+      "image": "uploads/products/placeholder.jpeg",
+      "quantity": 10,
+      "categories": [1, 2]
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 2,
+    "fields": {
+      "name": "Zapatillas de correr",
+      "description": "Nuestras zapatillas de correr son perfectas para tus entrenamientos. Con una suela resistente y un diseño cómodo, estas zapatillas te proporcionarán el soporte que necesitas durante tus carreras.",
+      "price": "79.99",
+      "image": "uploads/products/placeholder.jpeg",
+      "quantity": 5,
+      "categories": [1, 4]
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 3,
+    "fields": {
+      "name": "Libro de cocina",
+      "description": "Nuestro libro de cocina está lleno de recetas deliciosas que te inspirarán en la cocina. Con instrucciones claras y fotos hermosas, este libro es un recurso esencial para cualquier amante de la cocina.",
+      "price": "19.99",
+      "image": "uploads/products/placeholder.jpeg",
+      "quantity": 20,
+      "categories": [1, 3, 5]
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 4,
+    "fields": {
+      "name": "Camiseta",
+      "description": "Nuestra camiseta es cómoda y elegante, perfecta para cualquier ocasión. Hecha de materiales de alta calidad, esta camiseta te mantendrá fresco y cómodo todo el día.",
+      "price": "29.99",
+      "image": "uploads/products/placeholder.jpeg",
+      "quantity": 15,
+      "categories": [1, 4]
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 5,
+    "fields": {
+      "name": "Cereal",
+      "description": "Nuestro cereal es saludable y delicioso, perfecto para empezar el día. Hecho con ingredientes naturales, este cereal te proporcionará la energía que necesitas para enfrentar el día.",
+      "price": "4.99",
+      "image": "uploads/products/placeholder.jpeg",
+      "quantity": 30,
+      "categories": [1, 5]
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 6,
+    "fields": {
+      "name": "Smartphone",
+      "description": "Nuestro smartphone de última generación ofrece una experiencia móvil inigualable. Con una cámara de alta resolución y una batería de larga duración, este smartphone te mantendrá conectado en todo momento.",
+      "price": "699.99",
+      "image": "uploads/products/placeholder.jpeg",
+      "quantity": 20,
+      "categories": [1, 2]
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 7,
+    "fields": {
+      "name": "Mochila de senderismo",
+      "description": "Nuestra mochila de senderismo es resistente y espaciosa, perfecta para tus aventuras al aire libre. Con múltiples compartimentos y un diseño ergonómico, esta mochila te permitirá llevar todo lo que necesitas cómodamente.",
+      "price": "49.99",
+      "image": "uploads/products/placeholder.jpeg",
+      "quantity": 15,
+      "categories": [1, 4]
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 8,
+    "fields": {
+      "name": "Novela de misterio",
+      "description": "Nuestra novela de misterio te mantendrá en vilo desde la primera hasta la última página. Con una trama intrigante y personajes bien desarrollados, este libro es un must para cualquier amante del género.",
+      "price": "14.99",
+      "image": "uploads/products/placeholder.jpeg",
+      "quantity": 30,
+      "categories": [1, 3]
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 9,
+    "fields": {
+      "name": "Jeans ajustados",
+      "description": "Nuestros jeans ajustados son cómodos y versátiles, ideales para cualquier ocasión. Hechos con tela de alta calidad, estos jeans te ofrecen un ajuste perfecto y un estilo moderno.",
+      "price": "59.99",
+      "image": "uploads/products/placeholder.jpeg",
+      "quantity": 25,
+      "categories": [1, 4]
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 10,
+    "fields": {
+      "name": "Pasta integral",
+      "description": "Nuestra pasta integral es nutritiva y deliciosa, perfecta para una comida saludable. Hecha con ingredientes 100% naturales, esta pasta es una excelente fuente de fibra y proteínas.",
+      "price": "3.99",
+      "image": "uploads/products/placeholder.jpeg",
+      "quantity": 40,
+      "categories": [1, 5]
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 11,
+    "fields": {
+      "name": "Reloj inteligente",
+      "description": "Nuestro reloj inteligente te ayuda a mantener un seguimiento de tu salud y tus actividades diarias. Con funciones como monitor de ritmo cardíaco y contador de pasos, este reloj es el compañero perfecto para tu estilo de vida activo.",
+      "price": "199.99",
+      "image": "uploads/products/placeholder.jpeg",
+      "quantity": 10,
+      "categories": [1, 2, 4]
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 12,
+    "fields": {
+      "name": "Botas de montaña",
+      "description": "Nuestras botas de montaña son duraderas y cómodas, ideales para tus excursiones al aire libre. Con una suela resistente y un diseño impermeable, estas botas te protegerán en cualquier tipo de terreno.",
+      "price": "89.99",
+      "image": "uploads/products/placeholder.jpeg",
+      "quantity": 15,
+      "categories": [1, 4]
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 13,
+    "fields": {
+      "name": "Cafetera Express",
+      "description": "Nuestra cafetera express te permite disfrutar de un café de calidad barista en la comodidad de tu hogar. Con su diseño elegante y su fácil uso, es el complemento perfecto para tu cocina.",
+      "price": "120.99",
+      "image": "uploads/products/placeholder.jpeg",
+      "quantity": 20,
+      "categories": [1, 2]
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 14,
+    "fields": {
+      "name": "Sudadera con Capucha",
+      "description": "Nuestra sudadera con capucha combina comodidad y estilo. Hecha con materiales suaves y duraderos, es perfecta para los días fríos o para un look casual.",
+      "price": "45.99",
+      "image": "uploads/products/placeholder.jpeg",
+      "quantity": 30,
+      "categories": [1, 4]
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 15,
+    "fields": {
+      "name": "Libro de Historia Mundial",
+      "description": "Nuestro libro de historia mundial ofrece una visión completa y fascinante de los eventos más importantes de la historia. Es una lectura obligada para los amantes de la historia.",
+      "price": "25.99",
+      "image": "uploads/products/placeholder.jpeg",
+      "quantity": 50,
+      "categories": [1, 3]
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 16,
+    "fields": {
+      "name": "Sartén Antiadherente",
+      "description": "Nuestra sartén antiadherente es un básico en cualquier cocina. Con su revestimiento antiadherente de alta calidad, te permite cocinar con menos aceite y es fácil de limpiar.",
+      "price": "30.99",
+      "image": "uploads/products/placeholder.jpeg",
+      "quantity": 40,
+      "categories": [1, 2]
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 17,
+    "fields": {
+      "name": "Zapatos de Vestir",
+      "description": "Nuestros zapatos de vestir ofrecen una combinación de elegancia y confort. Con su diseño clásico, son el complemento perfecto para cualquier traje formal.",
+      "price": "80.99",
+      "image": "uploads/products/placeholder.jpeg",
+      "quantity": 25,
+      "categories": [1, 4]
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 18,
+    "fields": {
+      "name": "Arroz Integral Orgánico",
+      "description": "Nuestro arroz integral orgánico es una opción saludable y nutritiva para tus comidas. Cultivado sin pesticidas, este arroz es rico en fibra y un complemento perfecto para una dieta equilibrada.",
+      "price": "5.99",
+      "image": "uploads/products/placeholder.jpeg",
+      "quantity": 60,
+      "categories": [1, 5]
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 19,
+    "fields": {
+      "name": "Altavoces Bluetooth",
+      "description": "Nuestros altavoces Bluetooth ofrecen un sonido de alta calidad en un diseño compacto. Son perfectos para escuchar tu música favorita en casa o en movimiento.",
+      "price": "50.99",
+      "image": "uploads/products/placeholder.jpeg",
+      "quantity": 35,
+      "categories": [1, 2]
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 20,
+    "fields": {
+      "name": "Camisa de Vestir",
+      "description": "Nuestra camisa de vestir es una prenda esencial en el guardarropa de cualquier hombre. Con su corte clásico y su tela de alta calidad, esta camisa te hará lucir elegante en cualquier ocasión.",
+      "price": "40.99",
+      "image": "uploads/products/placeholder.jpeg",
+      "quantity": 30,
+      "categories": [1, 4]
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 21,
+    "fields": {
+      "name": "Libro de Recetas Veganas",
+      "description": "Nuestro libro de recetas veganas está lleno de deliciosas y saludables recetas. Desde platos principales hasta postres, este libro te ayudará a preparar comidas veganas que encantarán a todos.",
+      "price": "15.99",
+      "image": "uploads/products/placeholder.jpeg",
+      "quantity": 40,
+      "categories": [1, 3, 5]
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 22,
+    "fields": {
+      "name": "Reloj de Pared Moderno",
+      "description": "Nuestro reloj de pared moderno es una adición elegante a cualquier hogar. Con su diseño minimalista y su mecanismo silencioso, este reloj no solo te ayudará a mantener la hora, sino que también decorará tu espacio.",
+      "price": "35.99",
+      "image": "uploads/products/placeholder.jpeg",
+      "quantity": 20,
+      "categories": [1, 2]
+    }
+  }
+]
